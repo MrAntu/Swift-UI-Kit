@@ -1,0 +1,6 @@
+framework module Pods_EmptyDataViewDemo {
+  umbrella header "Pods-EmptyDataViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

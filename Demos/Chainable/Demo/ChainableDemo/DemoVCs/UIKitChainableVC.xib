@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIKitChainableVC" customModule="ChainableDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="lab" destination="OOB-5Q-tS0" id="VfH-mO-88U"/>
+                <outlet property="progressView" destination="J3U-Yg-NMb" id="pkm-jr-jlY"/>
+                <outlet property="slider" destination="cX1-NX-N9g" id="c0o-cT-7Tc"/>
+                <outlet property="switchView" destination="0lN-0a-Jly" id="JiR-Of-rLM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="chainable" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOB-5Q-tS0">
+                    <rect key="frame" x="114" y="206" width="139" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cX1-NX-N9g">
+                    <rect key="frame" x="35" y="55" width="230" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="Ywe-5C-kr4"/>
+                    </constraints>
+                </slider>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lN-0a-Jly">
+                    <rect key="frame" x="54" y="120" width="49" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="4Hm-bS-YTt"/>
+                        <constraint firstAttribute="height" constant="31" id="o92-yS-OUC"/>
+                    </constraints>
+                </switch>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J3U-Yg-NMb">
+                    <rect key="frame" x="178" y="112" width="150" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="H4W-jg-HEY"/>
+                        <constraint firstAttribute="height" constant="2" id="JER-v7-MdJ"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0lN-0a-Jly" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="54" id="03s-nB-G9M"/>
+                <constraint firstItem="0lN-0a-Jly" firstAttribute="top" secondItem="cX1-NX-N9g" secondAttribute="bottom" constant="36" id="GSa-bS-66V"/>
+                <constraint firstItem="cX1-NX-N9g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="HNM-Ki-cyp"/>
+                <constraint firstItem="cX1-NX-N9g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="O43-RA-RhV"/>
+                <constraint firstItem="J3U-Yg-NMb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="178" id="Sem-go-GAq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cX1-NX-N9g" secondAttribute="trailing" constant="112" id="Ve1-1r-bgv"/>
+                <constraint firstItem="J3U-Yg-NMb" firstAttribute="top" secondItem="cX1-NX-N9g" secondAttribute="bottom" constant="28" id="cJt-ju-MOX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

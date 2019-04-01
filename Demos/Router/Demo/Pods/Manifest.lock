@@ -1,0 +1,21 @@
+PODS:
+  - DDKit/DDScan (0.4.8):
+    - SnapKit
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - DDKit/DDScan
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+  https://github.com/hk01-digital/hk01-ios-uikit-spec.git:
+    - DDKit
+
+SPEC CHECKSUMS:
+  DDKit: 58b482cacad7e2b47e0ae9245b11359a46ae5754
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 23d145905bf1ea652889ac9108c63a91e7193129
+
+COCOAPODS: 1.5.3

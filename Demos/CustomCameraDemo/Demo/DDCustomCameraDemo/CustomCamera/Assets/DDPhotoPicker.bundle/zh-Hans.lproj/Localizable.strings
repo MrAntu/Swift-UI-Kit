@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  DDCustomCameraDemo
+
+  Created by weiwei.li on 2019/1/4.
+  Copyright © 2019 dd01.leo. All rights reserved.
+*/
+"图片" = "图片";
+"拍摄照片" = "拍摄照片";
+"完成" = "完成";
+"预览" = "预览";
+"请选择图片预览" = "请选择图片预览";
+"最多只能选择" = "最多只能选择";
+"张图片" = "张图片";
+"选择" = "选择";
+"提示" = "提示";
+"确定" = "確定";
+"photoPermission" = "您没有使用照片的权限\n请在设置->隐私->照片中打开权限";
+"cameraPermission" = "您没有使用相机的权限\n请在设置->隐私->相机中打开权限";
+"microphonePermission" = "您没有使用麦克风的权限\n请在设置->隐私->麦克风中打开权限";
+"取消" = "取消";
+"去设置" = "去设置";
+"相册" = "相册";
+"cameraTip" = "单击拍照，长按拍摄";
+

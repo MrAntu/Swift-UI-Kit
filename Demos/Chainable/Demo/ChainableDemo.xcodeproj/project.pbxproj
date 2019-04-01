@@ -1,0 +1,922 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E7676D1D0D7BD4CE9700BBF /* Pods_ChainableDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BAE676D2E488EE5E713607 /* Pods_ChainableDemo.framework */; };
+		CE12E52621E7109E00A22061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E52521E7109E00A22061 /* AppDelegate.swift */; };
+		CE12E52821E7109E00A22061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E52721E7109E00A22061 /* ViewController.swift */; };
+		CE12E52B21E7109E00A22061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE12E52921E7109E00A22061 /* Main.storyboard */; };
+		CE12E52D21E7109F00A22061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE12E52C21E7109F00A22061 /* Assets.xcassets */; };
+		CE12E53021E7109F00A22061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE12E52E21E7109F00A22061 /* LaunchScreen.storyboard */; };
+		CE12E53B21E7109F00A22061 /* ChainableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E53A21E7109F00A22061 /* ChainableDemoTests.swift */; };
+		CE12E54621E7109F00A22061 /* ChainableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E54521E7109F00A22061 /* ChainableDemoUITests.swift */; };
+		CE12E57921E7120800A22061 /* TextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E57721E7120800A22061 /* TextFieldVC.swift */; };
+		CE12E57A21E7120800A22061 /* TextFieldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E57821E7120800A22061 /* TextFieldVC.xib */; };
+		CE12E57D21E716E800A22061 /* UIKitChainableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E57B21E716E800A22061 /* UIKitChainableVC.swift */; };
+		CE12E57E21E716E800A22061 /* UIKitChainableVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E57C21E716E800A22061 /* UIKitChainableVC.xib */; };
+		CE12E58121E717A900A22061 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E57F21E717A900A22061 /* TableViewVC.swift */; };
+		CE12E58221E717A900A22061 /* TableViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E58021E717A900A22061 /* TableViewVC.xib */; };
+		CE12E58521E71A4300A22061 /* TextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E58321E71A4300A22061 /* TextViewVC.swift */; };
+		CE12E58621E71A4300A22061 /* TextViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E58421E71A4300A22061 /* TextViewVC.xib */; };
+		CE12E58D21E7317C00A22061 /* ScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E58B21E7317C00A22061 /* ScrollViewVC.swift */; };
+		CE12E58E21E7317C00A22061 /* ScrollViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E58C21E7317C00A22061 /* ScrollViewVC.xib */; };
+		CE12E59621E8283E00A22061 /* CollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E59421E8283E00A22061 /* CollectionViewVC.swift */; };
+		CE12E59721E8283E00A22061 /* CollectionViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E59521E8283E00A22061 /* CollectionViewVC.xib */; };
+		CE12E59E21E8732800A22061 /* SearchBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E59C21E8732800A22061 /* SearchBarVC.swift */; };
+		CE12E59F21E8732800A22061 /* SearchBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E59D21E8732800A22061 /* SearchBarVC.xib */; };
+		CE12E5B521E88F3200A22061 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12E5B321E88F3200A22061 /* NotificationVC.swift */; };
+		CE12E5B621E88F3200A22061 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE12E5B421E88F3200A22061 /* NotificationVC.xib */; };
+		CE51C85E224B20240011CBD9 /* UISegmentedControl+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C840224B20240011CBD9 /* UISegmentedControl+Chainable.swift */; };
+		CE51C85F224B20240011CBD9 /* Foundation+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C841224B20240011CBD9 /* Foundation+Chainable.swift */; };
+		CE51C860224B20240011CBD9 /* UIScrollView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C842224B20240011CBD9 /* UIScrollView+Blocks.swift */; };
+		CE51C861224B20240011CBD9 /* UIButton+EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C843224B20240011CBD9 /* UIButton+EdgeInsets.swift */; };
+		CE51C862224B20240011CBD9 /* UITextField+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C844224B20240011CBD9 /* UITextField+Shake.swift */; };
+		CE51C863224B20240011CBD9 /* UITextView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C845224B20240011CBD9 /* UITextView+Chainable.swift */; };
+		CE51C864224B20240011CBD9 /* UICollectionView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C846224B20240011CBD9 /* UICollectionView+Chainable.swift */; };
+		CE51C865224B20240011CBD9 /* UITextView+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C847224B20240011CBD9 /* UITextView+Placeholder.swift */; };
+		CE51C866224B20240011CBD9 /* UITextField+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C848224B20240011CBD9 /* UITextField+Chainable.swift */; };
+		CE51C867224B20240011CBD9 /* UIScrollView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C849224B20240011CBD9 /* UIScrollView+Chainable.swift */; };
+		CE51C868224B20240011CBD9 /* ChainableTableView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C84A224B20240011CBD9 /* ChainableTableView+Chainable.swift */; };
+		CE51C869224B20240011CBD9 /* UICollectionView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C84B224B20240011CBD9 /* UICollectionView+Blocks.swift */; };
+		CE51C86A224B20240011CBD9 /* UISearchBar+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C84C224B20240011CBD9 /* UISearchBar+Chainable.swift */; };
+		CE51C86B224B20240011CBD9 /* UIImageView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C84D224B20240011CBD9 /* UIImageView+Chainable.swift */; };
+		CE51C86C224B20240011CBD9 /* UIProgressView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C84E224B20240011CBD9 /* UIProgressView+Chainable.swift */; };
+		CE51C86D224B20240011CBD9 /* UISwitch+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C84F224B20240011CBD9 /* UISwitch+Chainable.swift */; };
+		CE51C86E224B20240011CBD9 /* UILabel+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C850224B20240011CBD9 /* UILabel+Chainable.swift */; };
+		CE51C86F224B20240011CBD9 /* NSObject+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C851224B20240011CBD9 /* NSObject+Chainable.swift */; };
+		CE51C870224B20240011CBD9 /* UIButton+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C852224B20240011CBD9 /* UIButton+Chainable.swift */; };
+		CE51C871224B20240011CBD9 /* UIKit+Closurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C853224B20240011CBD9 /* UIKit+Closurable.swift */; };
+		CE51C872224B20240011CBD9 /* UITextField+LengthLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C854224B20240011CBD9 /* UITextField+LengthLimit.swift */; };
+		CE51C873224B20240011CBD9 /* UIControl+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C855224B20240011CBD9 /* UIControl+Chainable.swift */; };
+		CE51C874224B20240011CBD9 /* UITextField+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C856224B20240011CBD9 /* UITextField+Blocks.swift */; };
+		CE51C875224B20240011CBD9 /* UIView+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C857224B20240011CBD9 /* UIView+Chainable.swift */; };
+		CE51C876224B20240011CBD9 /* UITextView+LengthLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C858224B20240011CBD9 /* UITextView+LengthLimit.swift */; };
+		CE51C877224B20240011CBD9 /* UISearchBar+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C859224B20240011CBD9 /* UISearchBar+Blocks.swift */; };
+		CE51C878224B20240011CBD9 /* UIKit+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C85A224B20240011CBD9 /* UIKit+Chainable.swift */; };
+		CE51C87A224B20240011CBD9 /* UISlider+Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C85C224B20240011CBD9 /* UISlider+Chainable.swift */; };
+		CE51C87B224B20240011CBD9 /* UITextView+Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C85D224B20240011CBD9 /* UITextView+Blocks.swift */; };
+		CE51C87D224B4BEA0011CBD9 /* ChainableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C87C224B4BEA0011CBD9 /* ChainableTableView.swift */; };
+		CE51C8BC224B57400011CBD9 /* UIButton+BackgroudColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8BB224B57400011CBD9 /* UIButton+BackgroudColor.swift */; };
+		CE51C8C5224B5FE60011CBD9 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8BD224B5FE40011CBD9 /* Array+Safe.swift */; };
+		CE51C8C6224B5FE60011CBD9 /* DispatchSourceTimer+DispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8BE224B5FE40011CBD9 /* DispatchSourceTimer+DispatchTimer.swift */; };
+		CE51C8C7224B5FE60011CBD9 /* Timer+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8BF224B5FE40011CBD9 /* Timer+Block.swift */; };
+		CE51C8C8224B5FE60011CBD9 /* UIViewController+NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C0224B5FE50011CBD9 /* UIViewController+NavigationBarItem.swift */; };
+		CE51C8C9224B5FE60011CBD9 /* UIApplication+Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C1224B5FE50011CBD9 /* UIApplication+Permissions.swift */; };
+		CE51C8CA224B5FE60011CBD9 /* UIView+Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C2224B5FE50011CBD9 /* UIView+Responder.swift */; };
+		CE51C8CB224B5FE60011CBD9 /* UIViewController+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C3224B5FE50011CBD9 /* UIViewController+TopViewController.swift */; };
+		CE51C8CC224B5FE60011CBD9 /* Nib+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8C4224B5FE60011CBD9 /* Nib+Extension.swift */; };
+		CE51C8CE224B603B0011CBD9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8CD224B603B0011CBD9 /* UIColor+Extension.swift */; };
+		CE51C8D0224B61E30011CBD9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8CF224B61E30011CBD9 /* TableViewController.swift */; };
+		CE51C8D2224B656D0011CBD9 /* SBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51C8D1224B656D0011CBD9 /* SBViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE12E53721E7109F00A22061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE12E51A21E7109E00A22061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE12E52121E7109E00A22061;
+			remoteInfo = ChainableDemo;
+		};
+		CE12E54221E7109F00A22061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE12E51A21E7109E00A22061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE12E52121E7109E00A22061;
+			remoteInfo = ChainableDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75588109886E33128E098DDF /* Pods-ChainableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainableDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChainableDemo/Pods-ChainableDemo.release.xcconfig"; sourceTree = "<group>"; };
+		78BAE676D2E488EE5E713607 /* Pods_ChainableDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChainableDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE12E52221E7109E00A22061 /* ChainableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChainableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE12E52521E7109E00A22061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE12E52721E7109E00A22061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE12E52A21E7109E00A22061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE12E52C21E7109F00A22061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE12E52F21E7109F00A22061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE12E53121E7109F00A22061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE12E53621E7109F00A22061 /* ChainableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE12E53A21E7109F00A22061 /* ChainableDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainableDemoTests.swift; sourceTree = "<group>"; };
+		CE12E53C21E7109F00A22061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE12E54121E7109F00A22061 /* ChainableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChainableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE12E54521E7109F00A22061 /* ChainableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainableDemoUITests.swift; sourceTree = "<group>"; };
+		CE12E54721E7109F00A22061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE12E57721E7120800A22061 /* TextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldVC.swift; sourceTree = "<group>"; };
+		CE12E57821E7120800A22061 /* TextFieldVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldVC.xib; sourceTree = "<group>"; };
+		CE12E57B21E716E800A22061 /* UIKitChainableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitChainableVC.swift; sourceTree = "<group>"; };
+		CE12E57C21E716E800A22061 /* UIKitChainableVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIKitChainableVC.xib; sourceTree = "<group>"; };
+		CE12E57F21E717A900A22061 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
+		CE12E58021E717A900A22061 /* TableViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewVC.xib; sourceTree = "<group>"; };
+		CE12E58321E71A4300A22061 /* TextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewVC.swift; sourceTree = "<group>"; };
+		CE12E58421E71A4300A22061 /* TextViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewVC.xib; sourceTree = "<group>"; };
+		CE12E58B21E7317C00A22061 /* ScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewVC.swift; sourceTree = "<group>"; };
+		CE12E58C21E7317C00A22061 /* ScrollViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewVC.xib; sourceTree = "<group>"; };
+		CE12E59421E8283E00A22061 /* CollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewVC.swift; sourceTree = "<group>"; };
+		CE12E59521E8283E00A22061 /* CollectionViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewVC.xib; sourceTree = "<group>"; };
+		CE12E59C21E8732800A22061 /* SearchBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarVC.swift; sourceTree = "<group>"; };
+		CE12E59D21E8732800A22061 /* SearchBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarVC.xib; sourceTree = "<group>"; };
+		CE12E5B321E88F3200A22061 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		CE12E5B421E88F3200A22061 /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		CE51C840224B20240011CBD9 /* UISegmentedControl+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C841224B20240011CBD9 /* Foundation+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C842224B20240011CBD9 /* UIScrollView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Blocks.swift"; sourceTree = "<group>"; };
+		CE51C843224B20240011CBD9 /* UIButton+EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+EdgeInsets.swift"; sourceTree = "<group>"; };
+		CE51C844224B20240011CBD9 /* UITextField+Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Shake.swift"; sourceTree = "<group>"; };
+		CE51C845224B20240011CBD9 /* UITextView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C846224B20240011CBD9 /* UICollectionView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C847224B20240011CBD9 /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
+		CE51C848224B20240011CBD9 /* UITextField+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C849224B20240011CBD9 /* UIScrollView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C84A224B20240011CBD9 /* ChainableTableView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChainableTableView+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C84B224B20240011CBD9 /* UICollectionView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Blocks.swift"; sourceTree = "<group>"; };
+		CE51C84C224B20240011CBD9 /* UISearchBar+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C84D224B20240011CBD9 /* UIImageView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C84E224B20240011CBD9 /* UIProgressView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C84F224B20240011CBD9 /* UISwitch+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C850224B20240011CBD9 /* UILabel+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C851224B20240011CBD9 /* NSObject+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C852224B20240011CBD9 /* UIButton+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C853224B20240011CBD9 /* UIKit+Closurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Closurable.swift"; sourceTree = "<group>"; };
+		CE51C854224B20240011CBD9 /* UITextField+LengthLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+LengthLimit.swift"; sourceTree = "<group>"; };
+		CE51C855224B20240011CBD9 /* UIControl+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C856224B20240011CBD9 /* UITextField+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Blocks.swift"; sourceTree = "<group>"; };
+		CE51C857224B20240011CBD9 /* UIView+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C858224B20240011CBD9 /* UITextView+LengthLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+LengthLimit.swift"; sourceTree = "<group>"; };
+		CE51C859224B20240011CBD9 /* UISearchBar+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Blocks.swift"; sourceTree = "<group>"; };
+		CE51C85A224B20240011CBD9 /* UIKit+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C85C224B20240011CBD9 /* UISlider+Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+Chainable.swift"; sourceTree = "<group>"; };
+		CE51C85D224B20240011CBD9 /* UITextView+Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Blocks.swift"; sourceTree = "<group>"; };
+		CE51C87C224B4BEA0011CBD9 /* ChainableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainableTableView.swift; sourceTree = "<group>"; };
+		CE51C8BB224B57400011CBD9 /* UIButton+BackgroudColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+BackgroudColor.swift"; sourceTree = "<group>"; };
+		CE51C8BD224B5FE40011CBD9 /* Array+Safe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		CE51C8BE224B5FE40011CBD9 /* DispatchSourceTimer+DispatchTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchSourceTimer+DispatchTimer.swift"; sourceTree = "<group>"; };
+		CE51C8BF224B5FE40011CBD9 /* Timer+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Block.swift"; sourceTree = "<group>"; };
+		CE51C8C0224B5FE50011CBD9 /* UIViewController+NavigationBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBarItem.swift"; sourceTree = "<group>"; };
+		CE51C8C1224B5FE50011CBD9 /* UIApplication+Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Permissions.swift"; sourceTree = "<group>"; };
+		CE51C8C2224B5FE50011CBD9 /* UIView+Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Responder.swift"; sourceTree = "<group>"; };
+		CE51C8C3224B5FE50011CBD9 /* UIViewController+TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TopViewController.swift"; sourceTree = "<group>"; };
+		CE51C8C4224B5FE60011CBD9 /* Nib+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nib+Extension.swift"; sourceTree = "<group>"; };
+		CE51C8CD224B603B0011CBD9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		CE51C8CF224B61E30011CBD9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CE51C8D1224B656D0011CBD9 /* SBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBViewController.swift; sourceTree = "<group>"; };
+		E11E81A5EA708901F407929E /* Pods-ChainableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainableDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChainableDemo/Pods-ChainableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE12E51F21E7109E00A22061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E7676D1D0D7BD4CE9700BBF /* Pods_ChainableDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE12E53321E7109F00A22061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE12E53E21E7109F00A22061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62D6F4AF12538A67C8FD325A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78BAE676D2E488EE5E713607 /* Pods_ChainableDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE12E51921E7109E00A22061 = {
+			isa = PBXGroup;
+			children = (
+				CE12E52421E7109E00A22061 /* ChainableDemo */,
+				CE12E53921E7109F00A22061 /* ChainableDemoTests */,
+				CE12E54421E7109F00A22061 /* ChainableDemoUITests */,
+				CE12E52321E7109E00A22061 /* Products */,
+				FDFD34B101B46285F90D6E36 /* Pods */,
+				62D6F4AF12538A67C8FD325A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE12E52321E7109E00A22061 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E52221E7109E00A22061 /* ChainableDemo.app */,
+				CE12E53621E7109F00A22061 /* ChainableDemoTests.xctest */,
+				CE12E54121E7109F00A22061 /* ChainableDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE12E52421E7109E00A22061 /* ChainableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CE51C83F224B20240011CBD9 /* Chainable */,
+				CE12E57621E711EE00A22061 /* DemoVCs */,
+				CE12E52521E7109E00A22061 /* AppDelegate.swift */,
+				CE12E52721E7109E00A22061 /* ViewController.swift */,
+				CE12E52921E7109E00A22061 /* Main.storyboard */,
+				CE12E52C21E7109F00A22061 /* Assets.xcassets */,
+				CE12E52E21E7109F00A22061 /* LaunchScreen.storyboard */,
+				CE12E53121E7109F00A22061 /* Info.plist */,
+			);
+			path = ChainableDemo;
+			sourceTree = "<group>";
+		};
+		CE12E53921E7109F00A22061 /* ChainableDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E53A21E7109F00A22061 /* ChainableDemoTests.swift */,
+				CE12E53C21E7109F00A22061 /* Info.plist */,
+			);
+			path = ChainableDemoTests;
+			sourceTree = "<group>";
+		};
+		CE12E54421E7109F00A22061 /* ChainableDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE12E54521E7109F00A22061 /* ChainableDemoUITests.swift */,
+				CE12E54721E7109F00A22061 /* Info.plist */,
+			);
+			path = ChainableDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE12E57621E711EE00A22061 /* DemoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				CE51C8CF224B61E30011CBD9 /* TableViewController.swift */,
+				CE12E57B21E716E800A22061 /* UIKitChainableVC.swift */,
+				CE12E57C21E716E800A22061 /* UIKitChainableVC.xib */,
+				CE12E57721E7120800A22061 /* TextFieldVC.swift */,
+				CE12E57821E7120800A22061 /* TextFieldVC.xib */,
+				CE12E57F21E717A900A22061 /* TableViewVC.swift */,
+				CE12E58021E717A900A22061 /* TableViewVC.xib */,
+				CE12E58321E71A4300A22061 /* TextViewVC.swift */,
+				CE12E58421E71A4300A22061 /* TextViewVC.xib */,
+				CE12E58B21E7317C00A22061 /* ScrollViewVC.swift */,
+				CE12E58C21E7317C00A22061 /* ScrollViewVC.xib */,
+				CE12E59421E8283E00A22061 /* CollectionViewVC.swift */,
+				CE12E59521E8283E00A22061 /* CollectionViewVC.xib */,
+				CE12E59C21E8732800A22061 /* SearchBarVC.swift */,
+				CE12E59D21E8732800A22061 /* SearchBarVC.xib */,
+				CE12E5B321E88F3200A22061 /* NotificationVC.swift */,
+				CE12E5B421E88F3200A22061 /* NotificationVC.xib */,
+				CE51C8D1224B656D0011CBD9 /* SBViewController.swift */,
+			);
+			path = DemoVCs;
+			sourceTree = "<group>";
+		};
+		CE51C83F224B20240011CBD9 /* Chainable */ = {
+			isa = PBXGroup;
+			children = (
+				CE51C8CD224B603B0011CBD9 /* UIColor+Extension.swift */,
+				CE51C8BD224B5FE40011CBD9 /* Array+Safe.swift */,
+				CE51C8BE224B5FE40011CBD9 /* DispatchSourceTimer+DispatchTimer.swift */,
+				CE51C8BF224B5FE40011CBD9 /* Timer+Block.swift */,
+				CE51C8C1224B5FE50011CBD9 /* UIApplication+Permissions.swift */,
+				CE51C8C4224B5FE60011CBD9 /* Nib+Extension.swift */,
+				CE51C8C2224B5FE50011CBD9 /* UIView+Responder.swift */,
+				CE51C8C0224B5FE50011CBD9 /* UIViewController+NavigationBarItem.swift */,
+				CE51C8C3224B5FE50011CBD9 /* UIViewController+TopViewController.swift */,
+				CE51C840224B20240011CBD9 /* UISegmentedControl+Chainable.swift */,
+				CE51C841224B20240011CBD9 /* Foundation+Chainable.swift */,
+				CE51C842224B20240011CBD9 /* UIScrollView+Blocks.swift */,
+				CE51C843224B20240011CBD9 /* UIButton+EdgeInsets.swift */,
+				CE51C844224B20240011CBD9 /* UITextField+Shake.swift */,
+				CE51C845224B20240011CBD9 /* UITextView+Chainable.swift */,
+				CE51C846224B20240011CBD9 /* UICollectionView+Chainable.swift */,
+				CE51C847224B20240011CBD9 /* UITextView+Placeholder.swift */,
+				CE51C848224B20240011CBD9 /* UITextField+Chainable.swift */,
+				CE51C849224B20240011CBD9 /* UIScrollView+Chainable.swift */,
+				CE51C84A224B20240011CBD9 /* ChainableTableView+Chainable.swift */,
+				CE51C84B224B20240011CBD9 /* UICollectionView+Blocks.swift */,
+				CE51C84C224B20240011CBD9 /* UISearchBar+Chainable.swift */,
+				CE51C84D224B20240011CBD9 /* UIImageView+Chainable.swift */,
+				CE51C84E224B20240011CBD9 /* UIProgressView+Chainable.swift */,
+				CE51C84F224B20240011CBD9 /* UISwitch+Chainable.swift */,
+				CE51C850224B20240011CBD9 /* UILabel+Chainable.swift */,
+				CE51C851224B20240011CBD9 /* NSObject+Chainable.swift */,
+				CE51C852224B20240011CBD9 /* UIButton+Chainable.swift */,
+				CE51C853224B20240011CBD9 /* UIKit+Closurable.swift */,
+				CE51C854224B20240011CBD9 /* UITextField+LengthLimit.swift */,
+				CE51C855224B20240011CBD9 /* UIControl+Chainable.swift */,
+				CE51C856224B20240011CBD9 /* UITextField+Blocks.swift */,
+				CE51C857224B20240011CBD9 /* UIView+Chainable.swift */,
+				CE51C858224B20240011CBD9 /* UITextView+LengthLimit.swift */,
+				CE51C859224B20240011CBD9 /* UISearchBar+Blocks.swift */,
+				CE51C85A224B20240011CBD9 /* UIKit+Chainable.swift */,
+				CE51C85C224B20240011CBD9 /* UISlider+Chainable.swift */,
+				CE51C85D224B20240011CBD9 /* UITextView+Blocks.swift */,
+				CE51C87C224B4BEA0011CBD9 /* ChainableTableView.swift */,
+				CE51C8BB224B57400011CBD9 /* UIButton+BackgroudColor.swift */,
+			);
+			path = Chainable;
+			sourceTree = "<group>";
+		};
+		FDFD34B101B46285F90D6E36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E11E81A5EA708901F407929E /* Pods-ChainableDemo.debug.xcconfig */,
+				75588109886E33128E098DDF /* Pods-ChainableDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE12E52121E7109E00A22061 /* ChainableDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE12E54A21E7109F00A22061 /* Build configuration list for PBXNativeTarget "ChainableDemo" */;
+			buildPhases = (
+				D55DBBB86C4C02D2FBC9D410 /* [CP] Check Pods Manifest.lock */,
+				CE12E51E21E7109E00A22061 /* Sources */,
+				CE12E51F21E7109E00A22061 /* Frameworks */,
+				CE12E52021E7109E00A22061 /* Resources */,
+				922103290B214A116FED0E51 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChainableDemo;
+			productName = ChainableDemo;
+			productReference = CE12E52221E7109E00A22061 /* ChainableDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE12E53521E7109F00A22061 /* ChainableDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE12E54D21E7109F00A22061 /* Build configuration list for PBXNativeTarget "ChainableDemoTests" */;
+			buildPhases = (
+				CE12E53221E7109F00A22061 /* Sources */,
+				CE12E53321E7109F00A22061 /* Frameworks */,
+				CE12E53421E7109F00A22061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE12E53821E7109F00A22061 /* PBXTargetDependency */,
+			);
+			name = ChainableDemoTests;
+			productName = ChainableDemoTests;
+			productReference = CE12E53621E7109F00A22061 /* ChainableDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE12E54021E7109F00A22061 /* ChainableDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE12E55021E7109F00A22061 /* Build configuration list for PBXNativeTarget "ChainableDemoUITests" */;
+			buildPhases = (
+				CE12E53D21E7109F00A22061 /* Sources */,
+				CE12E53E21E7109F00A22061 /* Frameworks */,
+				CE12E53F21E7109F00A22061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE12E54321E7109F00A22061 /* PBXTargetDependency */,
+			);
+			name = ChainableDemoUITests;
+			productName = ChainableDemoUITests;
+			productReference = CE12E54121E7109F00A22061 /* ChainableDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE12E51A21E7109E00A22061 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = dd01.leo;
+				TargetAttributes = {
+					CE12E52121E7109E00A22061 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CE12E53521E7109F00A22061 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE12E52121E7109E00A22061;
+					};
+					CE12E54021E7109F00A22061 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE12E52121E7109E00A22061;
+					};
+				};
+			};
+			buildConfigurationList = CE12E51D21E7109E00A22061 /* Build configuration list for PBXProject "ChainableDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE12E51921E7109E00A22061;
+			productRefGroup = CE12E52321E7109E00A22061 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE12E52121E7109E00A22061 /* ChainableDemo */,
+				CE12E53521E7109F00A22061 /* ChainableDemoTests */,
+				CE12E54021E7109F00A22061 /* ChainableDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE12E52021E7109E00A22061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE12E53021E7109F00A22061 /* LaunchScreen.storyboard in Resources */,
+				CE12E5B621E88F3200A22061 /* NotificationVC.xib in Resources */,
+				CE12E52D21E7109F00A22061 /* Assets.xcassets in Resources */,
+				CE12E59721E8283E00A22061 /* CollectionViewVC.xib in Resources */,
+				CE12E57A21E7120800A22061 /* TextFieldVC.xib in Resources */,
+				CE12E58621E71A4300A22061 /* TextViewVC.xib in Resources */,
+				CE12E58E21E7317C00A22061 /* ScrollViewVC.xib in Resources */,
+				CE12E59F21E8732800A22061 /* SearchBarVC.xib in Resources */,
+				CE12E57E21E716E800A22061 /* UIKitChainableVC.xib in Resources */,
+				CE12E58221E717A900A22061 /* TableViewVC.xib in Resources */,
+				CE12E52B21E7109E00A22061 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE12E53421E7109F00A22061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE12E53F21E7109F00A22061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		922103290B214A116FED0E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChainableDemo/Pods-ChainableDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChainableDemo/Pods-ChainableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D55DBBB86C4C02D2FBC9D410 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChainableDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE12E51E21E7109E00A22061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE51C875224B20240011CBD9 /* UIView+Chainable.swift in Sources */,
+				CE51C877224B20240011CBD9 /* UISearchBar+Blocks.swift in Sources */,
+				CE51C8C8224B5FE60011CBD9 /* UIViewController+NavigationBarItem.swift in Sources */,
+				CE12E57D21E716E800A22061 /* UIKitChainableVC.swift in Sources */,
+				CE51C870224B20240011CBD9 /* UIButton+Chainable.swift in Sources */,
+				CE51C86C224B20240011CBD9 /* UIProgressView+Chainable.swift in Sources */,
+				CE51C87D224B4BEA0011CBD9 /* ChainableTableView.swift in Sources */,
+				CE51C872224B20240011CBD9 /* UITextField+LengthLimit.swift in Sources */,
+				CE12E57921E7120800A22061 /* TextFieldVC.swift in Sources */,
+				CE51C8CE224B603B0011CBD9 /* UIColor+Extension.swift in Sources */,
+				CE12E58521E71A4300A22061 /* TextViewVC.swift in Sources */,
+				CE51C860224B20240011CBD9 /* UIScrollView+Blocks.swift in Sources */,
+				CE51C874224B20240011CBD9 /* UITextField+Blocks.swift in Sources */,
+				CE51C8C7224B5FE60011CBD9 /* Timer+Block.swift in Sources */,
+				CE51C8CA224B5FE60011CBD9 /* UIView+Responder.swift in Sources */,
+				CE51C8BC224B57400011CBD9 /* UIButton+BackgroudColor.swift in Sources */,
+				CE51C869224B20240011CBD9 /* UICollectionView+Blocks.swift in Sources */,
+				CE51C8C9224B5FE60011CBD9 /* UIApplication+Permissions.swift in Sources */,
+				CE51C8C6224B5FE60011CBD9 /* DispatchSourceTimer+DispatchTimer.swift in Sources */,
+				CE51C8D0224B61E30011CBD9 /* TableViewController.swift in Sources */,
+				CE12E59E21E8732800A22061 /* SearchBarVC.swift in Sources */,
+				CE51C863224B20240011CBD9 /* UITextView+Chainable.swift in Sources */,
+				CE12E59621E8283E00A22061 /* CollectionViewVC.swift in Sources */,
+				CE51C871224B20240011CBD9 /* UIKit+Closurable.swift in Sources */,
+				CE51C86F224B20240011CBD9 /* NSObject+Chainable.swift in Sources */,
+				CE12E52821E7109E00A22061 /* ViewController.swift in Sources */,
+				CE51C864224B20240011CBD9 /* UICollectionView+Chainable.swift in Sources */,
+				CE51C867224B20240011CBD9 /* UIScrollView+Chainable.swift in Sources */,
+				CE51C8CC224B5FE60011CBD9 /* Nib+Extension.swift in Sources */,
+				CE51C8D2224B656D0011CBD9 /* SBViewController.swift in Sources */,
+				CE51C862224B20240011CBD9 /* UITextField+Shake.swift in Sources */,
+				CE51C86B224B20240011CBD9 /* UIImageView+Chainable.swift in Sources */,
+				CE51C86E224B20240011CBD9 /* UILabel+Chainable.swift in Sources */,
+				CE51C8CB224B5FE60011CBD9 /* UIViewController+TopViewController.swift in Sources */,
+				CE51C8C5224B5FE60011CBD9 /* Array+Safe.swift in Sources */,
+				CE51C85F224B20240011CBD9 /* Foundation+Chainable.swift in Sources */,
+				CE51C87A224B20240011CBD9 /* UISlider+Chainable.swift in Sources */,
+				CE51C87B224B20240011CBD9 /* UITextView+Blocks.swift in Sources */,
+				CE51C876224B20240011CBD9 /* UITextView+LengthLimit.swift in Sources */,
+				CE51C86A224B20240011CBD9 /* UISearchBar+Chainable.swift in Sources */,
+				CE51C873224B20240011CBD9 /* UIControl+Chainable.swift in Sources */,
+				CE51C861224B20240011CBD9 /* UIButton+EdgeInsets.swift in Sources */,
+				CE51C878224B20240011CBD9 /* UIKit+Chainable.swift in Sources */,
+				CE51C866224B20240011CBD9 /* UITextField+Chainable.swift in Sources */,
+				CE12E5B521E88F3200A22061 /* NotificationVC.swift in Sources */,
+				CE12E58D21E7317C00A22061 /* ScrollViewVC.swift in Sources */,
+				CE12E52621E7109E00A22061 /* AppDelegate.swift in Sources */,
+				CE51C86D224B20240011CBD9 /* UISwitch+Chainable.swift in Sources */,
+				CE12E58121E717A900A22061 /* TableViewVC.swift in Sources */,
+				CE51C85E224B20240011CBD9 /* UISegmentedControl+Chainable.swift in Sources */,
+				CE51C865224B20240011CBD9 /* UITextView+Placeholder.swift in Sources */,
+				CE51C868224B20240011CBD9 /* ChainableTableView+Chainable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE12E53221E7109F00A22061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE12E53B21E7109F00A22061 /* ChainableDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE12E53D21E7109F00A22061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE12E54621E7109F00A22061 /* ChainableDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE12E53821E7109F00A22061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE12E52121E7109E00A22061 /* ChainableDemo */;
+			targetProxy = CE12E53721E7109F00A22061 /* PBXContainerItemProxy */;
+		};
+		CE12E54321E7109F00A22061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE12E52121E7109E00A22061 /* ChainableDemo */;
+			targetProxy = CE12E54221E7109F00A22061 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE12E52921E7109E00A22061 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE12E52A21E7109E00A22061 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE12E52E21E7109F00A22061 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE12E52F21E7109F00A22061 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE12E54821E7109F00A22061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE12E54921E7109F00A22061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE12E54B21E7109F00A22061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E11E81A5EA708901F407929E /* Pods-ChainableDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCRJV5NFD8;
+				INFOPLIST_FILE = ChainableDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.ChainableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE12E54C21E7109F00A22061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75588109886E33128E098DDF /* Pods-ChainableDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCRJV5NFD8;
+				INFOPLIST_FILE = ChainableDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.ChainableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE12E54E21E7109F00A22061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TH7563Z32V;
+				INFOPLIST_FILE = ChainableDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.ChainableDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChainableDemo.app/ChainableDemo";
+			};
+			name = Debug;
+		};
+		CE12E54F21E7109F00A22061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TH7563Z32V;
+				INFOPLIST_FILE = ChainableDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.ChainableDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChainableDemo.app/ChainableDemo";
+			};
+			name = Release;
+		};
+		CE12E55121E7109F00A22061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TH7563Z32V;
+				INFOPLIST_FILE = ChainableDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.ChainableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChainableDemo;
+			};
+			name = Debug;
+		};
+		CE12E55221E7109F00A22061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TH7563Z32V;
+				INFOPLIST_FILE = ChainableDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.ChainableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChainableDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE12E51D21E7109E00A22061 /* Build configuration list for PBXProject "ChainableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE12E54821E7109F00A22061 /* Debug */,
+				CE12E54921E7109F00A22061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE12E54A21E7109F00A22061 /* Build configuration list for PBXNativeTarget "ChainableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE12E54B21E7109F00A22061 /* Debug */,
+				CE12E54C21E7109F00A22061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE12E54D21E7109F00A22061 /* Build configuration list for PBXNativeTarget "ChainableDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE12E54E21E7109F00A22061 /* Debug */,
+				CE12E54F21E7109F00A22061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE12E55021E7109F00A22061 /* Build configuration list for PBXNativeTarget "ChainableDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE12E55121E7109F00A22061 /* Debug */,
+				CE12E55221E7109F00A22061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE12E51A21E7109E00A22061 /* Project object */;
+}

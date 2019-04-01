@@ -1,0 +1,6 @@
+framework module Pods_DDRouterDemo {
+  umbrella header "Pods-DDRouterDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

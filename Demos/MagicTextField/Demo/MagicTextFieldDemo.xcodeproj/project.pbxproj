@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEAC923121BA5295002363CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC923021BA5295002363CF /* AppDelegate.swift */; };
+		CEAC923321BA5295002363CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC923221BA5295002363CF /* ViewController.swift */; };
+		CEAC923621BA5295002363CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC923421BA5295002363CF /* Main.storyboard */; };
+		CEAC923821BA5296002363CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAC923721BA5296002363CF /* Assets.xcassets */; };
+		CEAC923B21BA5296002363CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC923921BA5296002363CF /* LaunchScreen.storyboard */; };
+		CEAC924621BA5296002363CF /* MagicTextFieldDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC924521BA5296002363CF /* MagicTextFieldDemoTests.swift */; };
+		CEAC925121BA5296002363CF /* MagicTextFieldDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC925021BA5296002363CF /* MagicTextFieldDemoUITests.swift */; };
+		CEAC926021BA52CE002363CF /* MagicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC925F21BA52CE002363CF /* MagicTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEAC924221BA5296002363CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEAC922521BA5295002363CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEAC922C21BA5295002363CF;
+			remoteInfo = MagicTextFieldDemo;
+		};
+		CEAC924D21BA5296002363CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEAC922521BA5295002363CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEAC922C21BA5295002363CF;
+			remoteInfo = MagicTextFieldDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEAC922D21BA5295002363CF /* MagicTextFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicTextFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAC923021BA5295002363CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEAC923221BA5295002363CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEAC923521BA5295002363CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEAC923721BA5296002363CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEAC923A21BA5296002363CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEAC923C21BA5296002363CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAC924121BA5296002363CF /* MagicTextFieldDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicTextFieldDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAC924521BA5296002363CF /* MagicTextFieldDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTextFieldDemoTests.swift; sourceTree = "<group>"; };
+		CEAC924721BA5296002363CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAC924C21BA5296002363CF /* MagicTextFieldDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicTextFieldDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAC925021BA5296002363CF /* MagicTextFieldDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTextFieldDemoUITests.swift; sourceTree = "<group>"; };
+		CEAC925221BA5296002363CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAC925F21BA52CE002363CF /* MagicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEAC922A21BA5295002363CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAC923E21BA5296002363CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAC924921BA5296002363CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEAC922421BA5295002363CF = {
+			isa = PBXGroup;
+			children = (
+				CEAC922F21BA5295002363CF /* MagicTextFieldDemo */,
+				CEAC924421BA5296002363CF /* MagicTextFieldDemoTests */,
+				CEAC924F21BA5296002363CF /* MagicTextFieldDemoUITests */,
+				CEAC922E21BA5295002363CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEAC922E21BA5295002363CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC922D21BA5295002363CF /* MagicTextFieldDemo.app */,
+				CEAC924121BA5296002363CF /* MagicTextFieldDemoTests.xctest */,
+				CEAC924C21BA5296002363CF /* MagicTextFieldDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEAC922F21BA5295002363CF /* MagicTextFieldDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC925E21BA52AE002363CF /* MagicTextField */,
+				CEAC923021BA5295002363CF /* AppDelegate.swift */,
+				CEAC923221BA5295002363CF /* ViewController.swift */,
+				CEAC923421BA5295002363CF /* Main.storyboard */,
+				CEAC923721BA5296002363CF /* Assets.xcassets */,
+				CEAC923921BA5296002363CF /* LaunchScreen.storyboard */,
+				CEAC923C21BA5296002363CF /* Info.plist */,
+			);
+			path = MagicTextFieldDemo;
+			sourceTree = "<group>";
+		};
+		CEAC924421BA5296002363CF /* MagicTextFieldDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC924521BA5296002363CF /* MagicTextFieldDemoTests.swift */,
+				CEAC924721BA5296002363CF /* Info.plist */,
+			);
+			path = MagicTextFieldDemoTests;
+			sourceTree = "<group>";
+		};
+		CEAC924F21BA5296002363CF /* MagicTextFieldDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC925021BA5296002363CF /* MagicTextFieldDemoUITests.swift */,
+				CEAC925221BA5296002363CF /* Info.plist */,
+			);
+			path = MagicTextFieldDemoUITests;
+			sourceTree = "<group>";
+		};
+		CEAC925E21BA52AE002363CF /* MagicTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC925F21BA52CE002363CF /* MagicTextField.swift */,
+			);
+			path = MagicTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEAC922C21BA5295002363CF /* MagicTextFieldDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAC925521BA5296002363CF /* Build configuration list for PBXNativeTarget "MagicTextFieldDemo" */;
+			buildPhases = (
+				CEAC922921BA5295002363CF /* Sources */,
+				CEAC922A21BA5295002363CF /* Frameworks */,
+				CEAC922B21BA5295002363CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicTextFieldDemo;
+			productName = MagicTextFieldDemo;
+			productReference = CEAC922D21BA5295002363CF /* MagicTextFieldDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEAC924021BA5296002363CF /* MagicTextFieldDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAC925821BA5296002363CF /* Build configuration list for PBXNativeTarget "MagicTextFieldDemoTests" */;
+			buildPhases = (
+				CEAC923D21BA5296002363CF /* Sources */,
+				CEAC923E21BA5296002363CF /* Frameworks */,
+				CEAC923F21BA5296002363CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEAC924321BA5296002363CF /* PBXTargetDependency */,
+			);
+			name = MagicTextFieldDemoTests;
+			productName = MagicTextFieldDemoTests;
+			productReference = CEAC924121BA5296002363CF /* MagicTextFieldDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEAC924B21BA5296002363CF /* MagicTextFieldDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAC925B21BA5296002363CF /* Build configuration list for PBXNativeTarget "MagicTextFieldDemoUITests" */;
+			buildPhases = (
+				CEAC924821BA5296002363CF /* Sources */,
+				CEAC924921BA5296002363CF /* Frameworks */,
+				CEAC924A21BA5296002363CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEAC924E21BA5296002363CF /* PBXTargetDependency */,
+			);
+			name = MagicTextFieldDemoUITests;
+			productName = MagicTextFieldDemoUITests;
+			productReference = CEAC924C21BA5296002363CF /* MagicTextFieldDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEAC922521BA5295002363CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = dd01.leo;
+				TargetAttributes = {
+					CEAC922C21BA5295002363CF = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CEAC924021BA5296002363CF = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CEAC922C21BA5295002363CF;
+					};
+					CEAC924B21BA5296002363CF = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CEAC922C21BA5295002363CF;
+					};
+				};
+			};
+			buildConfigurationList = CEAC922821BA5295002363CF /* Build configuration list for PBXProject "MagicTextFieldDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEAC922421BA5295002363CF;
+			productRefGroup = CEAC922E21BA5295002363CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEAC922C21BA5295002363CF /* MagicTextFieldDemo */,
+				CEAC924021BA5296002363CF /* MagicTextFieldDemoTests */,
+				CEAC924B21BA5296002363CF /* MagicTextFieldDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEAC922B21BA5295002363CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC923B21BA5296002363CF /* LaunchScreen.storyboard in Resources */,
+				CEAC923821BA5296002363CF /* Assets.xcassets in Resources */,
+				CEAC923621BA5295002363CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAC923F21BA5296002363CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAC924A21BA5296002363CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEAC922921BA5295002363CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC923321BA5295002363CF /* ViewController.swift in Sources */,
+				CEAC923121BA5295002363CF /* AppDelegate.swift in Sources */,
+				CEAC926021BA52CE002363CF /* MagicTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAC923D21BA5296002363CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC924621BA5296002363CF /* MagicTextFieldDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEAC924821BA5296002363CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC925121BA5296002363CF /* MagicTextFieldDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEAC924321BA5296002363CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEAC922C21BA5295002363CF /* MagicTextFieldDemo */;
+			targetProxy = CEAC924221BA5296002363CF /* PBXContainerItemProxy */;
+		};
+		CEAC924E21BA5296002363CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEAC922C21BA5295002363CF /* MagicTextFieldDemo */;
+			targetProxy = CEAC924D21BA5296002363CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEAC923421BA5295002363CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAC923521BA5295002363CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEAC923921BA5296002363CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAC923A21BA5296002363CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEAC925321BA5296002363CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEAC925421BA5296002363CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEAC925621BA5296002363CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicTextFieldDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.MagicTextFieldDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEAC925721BA5296002363CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicTextFieldDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.MagicTextFieldDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEAC925921BA5296002363CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicTextFieldDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.MagicTextFieldDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicTextFieldDemo.app/MagicTextFieldDemo";
+			};
+			name = Debug;
+		};
+		CEAC925A21BA5296002363CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicTextFieldDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.MagicTextFieldDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicTextFieldDemo.app/MagicTextFieldDemo";
+			};
+			name = Release;
+		};
+		CEAC925C21BA5296002363CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicTextFieldDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.MagicTextFieldDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagicTextFieldDemo;
+			};
+			name = Debug;
+		};
+		CEAC925D21BA5296002363CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MagicTextFieldDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadi01.vip.MagicTextFieldDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MagicTextFieldDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEAC922821BA5295002363CF /* Build configuration list for PBXProject "MagicTextFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAC925321BA5296002363CF /* Debug */,
+				CEAC925421BA5296002363CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAC925521BA5296002363CF /* Build configuration list for PBXNativeTarget "MagicTextFieldDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAC925621BA5296002363CF /* Debug */,
+				CEAC925721BA5296002363CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAC925821BA5296002363CF /* Build configuration list for PBXNativeTarget "MagicTextFieldDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAC925921BA5296002363CF /* Debug */,
+				CEAC925A21BA5296002363CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAC925B21BA5296002363CF /* Build configuration list for PBXNativeTarget "MagicTextFieldDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAC925C21BA5296002363CF /* Debug */,
+				CEAC925D21BA5296002363CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEAC922521BA5295002363CF /* Project object */;
+}
