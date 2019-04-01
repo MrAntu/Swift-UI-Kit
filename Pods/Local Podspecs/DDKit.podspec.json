@@ -1,0 +1,203 @@
+{
+  "name": "DDKit",
+  "version": "1.0.2",
+  "summary": "private extensions for uikit in swift.",
+  "description": "hk01 private uikit frameworks in swift.",
+  "homepage": "https://github.com/hk01-digital",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Samuel Ying": "xiaoleiyin@hk01.com"
+  },
+  "source": {
+    "git": "https://github.com/hk01-digital/dd01-ios-ui-kit.git",
+    "tag": "1.0.2",
+    "submodules": true
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_version": "4.2",
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "DDKit/Core/*"
+    },
+    {
+      "name": "Pop",
+      "source_files": "DDKit/Pop/Classes/*",
+      "resources": "DDKit/Pop/Assets/*"
+    },
+    {
+      "name": "Refresh",
+      "source_files": "DDKit/Refresh/*",
+      "dependencies": {
+        "MJRefresh": [
+
+        ]
+      }
+    },
+    {
+      "name": "Hud",
+      "source_files": "DDKit/Hud/*",
+      "dependencies": {
+        "MBProgressHUD": [
+
+        ],
+        "PKHUD": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Request",
+      "source_files": "DDKit/Request/*",
+      "dependencies": {
+        "Alamofire": [
+
+        ],
+        "PromiseKit": [
+
+        ],
+        "Cache": [
+
+        ]
+      }
+    },
+    {
+      "name": "Codable",
+      "source_files": "DDKit/Codable/*"
+    },
+    {
+      "name": "WebJS",
+      "source_files": "DDKit/WebJS/*"
+    },
+    {
+      "name": "VideoPlayer",
+      "source_files": "DDKit/VideoPlayer/Class/*",
+      "resources": "DDKit/VideoPlayer/Asset/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ],
+        "Alamofire": [
+
+        ]
+      }
+    },
+    {
+      "name": "PhotoBrowser",
+      "source_files": "DDKit/PhotoBrowser/Classes/*",
+      "resources": "DDKit/PhotoBrowser/Assets/*",
+      "dependencies": {
+        "Kingfisher": [
+
+        ]
+      }
+    },
+    {
+      "name": "CustomCamera",
+      "source_files": "DDKit/CustomCamera/Classes/*",
+      "resources": "DDKit/CustomCamera/Assets/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ],
+        "DDKit/Hud": [
+
+        ]
+      }
+    },
+    {
+      "name": "Scan",
+      "source_files": "DDKit/Scan/Classes/*",
+      "resources": "DDKit/Scan/Assets/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Mediator",
+      "source_files": "DDKit/Mediator/*"
+    },
+    {
+      "name": "Router",
+      "source_files": "DDKit/Router/*"
+    },
+    {
+      "name": "MagicTextField",
+      "source_files": "DDKit/MagicTextField/*"
+    },
+    {
+      "name": "EmptyDataView",
+      "source_files": "DDKit/EmptyDataView/Classes/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "DevelopConfig",
+      "source_files": "DDKit/DevelopConfig/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ],
+        "AFNetworking/Reachability": [
+
+        ]
+      }
+    },
+    {
+      "name": "PageTabsController",
+      "source_files": "DDKit/PageTabsController/*"
+    },
+    {
+      "name": "Picker",
+      "source_files": "DDKit/Picker/*",
+      "dependencies": {
+        "ActionSheetPicker-3.0": [
+
+        ]
+      }
+    },
+    {
+      "name": "CityList",
+      "source_files": "DDKit/CityList/Classes/*",
+      "resources": "DDKit/CityList/Asset/*"
+    },
+    {
+      "name": "NumberSelect",
+      "source_files": "DDKit/NumberSelect/Classes/*",
+      "resources": "DDKit/NumberSelect/Asset/*"
+    },
+    {
+      "name": "Chainable",
+      "source_files": "DDKit/Chainable/*",
+      "dependencies": {
+        "RxSwift": [
+
+        ],
+        "RxCocoa": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Debug",
+      "source_files": "DDKit/Debug/*"
+    }
+  ]
+}

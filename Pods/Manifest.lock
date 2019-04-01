@@ -1,0 +1,150 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - AFNetworking/Reachability (3.2.1)
+  - Alamofire (4.8.1)
+  - Cache (5.2.0)
+  - CryptoSwift (0.15.0)
+  - DDKit (1.0.2):
+    - DDKit/Core (= 1.0.2)
+  - DDKit/Chainable (1.0.2):
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+  - DDKit/CityList (1.0.2)
+  - DDKit/Codable (1.0.2)
+  - DDKit/Core (1.0.2)
+  - DDKit/CustomCamera (1.0.2):
+    - DDKit/Hud
+    - SnapKit
+  - DDKit/DevelopConfig (1.0.2):
+    - AFNetworking/Reachability
+    - SnapKit
+  - DDKit/EmptyDataView (1.0.2):
+    - SnapKit
+  - DDKit/Hud (1.0.2):
+    - MBProgressHUD
+    - PKHUD
+    - SnapKit
+  - DDKit/MagicTextField (1.0.2)
+  - DDKit/Mediator (1.0.2)
+  - DDKit/NumberSelect (1.0.2)
+  - DDKit/PageTabsController (1.0.2)
+  - DDKit/PhotoBrowser (1.0.2):
+    - Kingfisher
+  - DDKit/Picker (1.0.2):
+    - ActionSheetPicker-3.0
+  - DDKit/Pop (1.0.2)
+  - DDKit/Refresh (1.0.2):
+    - MJRefresh
+  - DDKit/Request (1.0.2):
+    - Alamofire
+    - Cache
+    - PromiseKit
+  - DDKit/Router (1.0.2)
+  - DDKit/Scan (1.0.2):
+    - SnapKit
+  - DDKit/VideoPlayer (1.0.2):
+    - Alamofire
+    - SnapKit
+  - DDKit/WebJS (1.0.2)
+  - Kingfisher (4.10.1)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.16)
+  - PKHUD (5.2.1)
+  - PromiseKit (6.8.3):
+    - PromiseKit/CorePromise (= 6.8.3)
+    - PromiseKit/Foundation (= 6.8.3)
+    - PromiseKit/UIKit (= 6.8.3)
+  - PromiseKit/CorePromise (6.8.3)
+  - PromiseKit/Foundation (6.8.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.3):
+    - PromiseKit/CorePromise
+  - RxAtomic (4.4.2)
+  - RxCocoa (4.4.2):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.4.2):
+    - RxAtomic (>= 4.4.2, ~> 4.4)
+  - SnapKit (4.2.0)
+  - SwiftLint (0.31.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - AFNetworking/Reachability
+  - Alamofire
+  - Cache
+  - CryptoSwift
+  - DDKit (from `.`)
+  - DDKit/Chainable (from `.`)
+  - DDKit/CityList (from `.`)
+  - DDKit/Codable (from `.`)
+  - DDKit/CustomCamera (from `.`)
+  - DDKit/DevelopConfig (from `.`)
+  - DDKit/EmptyDataView (from `.`)
+  - DDKit/Hud (from `.`)
+  - DDKit/MagicTextField (from `.`)
+  - DDKit/Mediator (from `.`)
+  - DDKit/NumberSelect (from `.`)
+  - DDKit/PageTabsController (from `.`)
+  - DDKit/PhotoBrowser (from `.`)
+  - DDKit/Picker (from `.`)
+  - DDKit/Pop (from `.`)
+  - DDKit/Refresh (from `.`)
+  - DDKit/Request (from `.`)
+  - DDKit/Router (from `.`)
+  - DDKit/Scan (from `.`)
+  - DDKit/VideoPlayer (from `.`)
+  - DDKit/WebJS (from `.`)
+  - Kingfisher
+  - MBProgressHUD
+  - MJRefresh
+  - PKHUD
+  - PromiseKit
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - AFNetworking
+    - Alamofire
+    - Cache
+    - CryptoSwift
+    - Kingfisher
+    - MBProgressHUD
+    - MJRefresh
+    - PKHUD
+    - PromiseKit
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+    - SwiftLint
+
+EXTERNAL SOURCES:
+  DDKit:
+    :path: "."
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  CryptoSwift: 769f58a9e89f64e8796c2e59ce5f002dc81a2438
+  DDKit: 1a0f30bf911cf89a633ce1a209e0154c49ce7197
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
+  RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
+  RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+
+PODFILE CHECKSUM: c19b796c7ed801128bd2007104621c86135be16a
+
+COCOAPODS: 1.6.0

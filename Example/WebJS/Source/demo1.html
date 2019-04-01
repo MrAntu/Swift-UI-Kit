@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js-sdk demo</title>
+  <!-- <script src="appSimulator.js"></script> -->
+  <script src="ddsdk.js"></script>
+</head>
+<body>
+<script>
+  function log(pre, msg) {
+    var str = pre += ': ';
+    str += JSON.stringify(msg, null, 2);
+    str += '\r\n\r\n';
+    var text = document.createTextNode(str);
+    document.getElementById('log-wrap').appendChild(text);
+  }
+
+  console.log('is app', dd.isApp());
+  dd.config({});
+  dd.ready(function(msg){
+    dd.onPush(function(event) {
+      log('onPush', event.data);
+      if (event.cb) {
+        event.cb('native callback success');
+      }
+    });
+    log('ready1', msg);
+  });
+  dd.ready(function(msg){
+    alert(JSON.stringify(msg));
+    log('ready2', msg);
+  });
+  dd.error(function(err){
+    log('error1', err);
+  });
+  dd.error(function(err){
+    log('error2', err);
+  });
+
+  function handlerFetch() {
+    dd.fetch('http://www.baidu.com').then(function(res){
+      log('fetch', res);
+    }).catch(function(err){
+      log('err', err);
+    });
+  }
+
+  function handlerSend() {
+    dd.send('share_to_qq', { name: 'zs' }, function(err, data) {
+      log('send', data);
+    })
+    .then(data => log('send success', data))
+    .catch(err => log('send error', err));
+  }
+
+  function handlerGet() {
+    dd.get('network_status')
+      .then(function(d) {log('get', d)})
+      .catch(err => log('get error', err));
+  }
+</script>
+<button onClick="handlerFetch()">Fetch</button>
+<button onClick="handlerSend()">Send</button>
+<button onClick="handlerGet()">Get</button>
+<pre id="log-wrap" style="border-top:1px solid #ccc;"></pre>
+</body>
+</html>

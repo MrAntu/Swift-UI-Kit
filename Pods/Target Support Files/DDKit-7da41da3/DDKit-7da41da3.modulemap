@@ -1,0 +1,6 @@
+framework module DDKit {
+  umbrella header "DDKit-7da41da3-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_DDKit {
+  umbrella header "Pods-DDKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
